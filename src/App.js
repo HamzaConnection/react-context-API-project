@@ -17,14 +17,14 @@ const App = () => {
     <GithubState>
       <AlertState>
         <Router>
-          <div className='App'>
+          <div className="App">
             <Navbar />
-            <div className='container'>
+            <div className="container">
               <Alert />
               <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/user/:login' component={User} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/user/:login" component={User} />
                 <Route component={NotFound} />
               </Switch>
             </div>
